@@ -19,6 +19,8 @@ with open(filename, 'w') as csvfile:
     # creating a csv writer object 
     csvwriter = csv.writer(csvfile) 
      
-        
+    NewList= [[x] for x in list_5]
+    # print(NewList)
+
     # writing the data rows 
-    csvwriter.writerows(list(i for i in list_5))
+    csvwriter.writerows(NewList)
