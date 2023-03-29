@@ -1,4 +1,6 @@
-from english_words import english_words_set
+from english_words import get_english_words_set
+
+
 from operator import and_, or_
 from functools import reduce
 
@@ -38,7 +40,8 @@ def containsAll(str, set):
 
 
 lwords=[]
-for x in english_words_set:
+lmain=get_english_words_set(['web2'], lower=True)
+for x in lmain:
     if len(x)==5:
         lwords.append(x.lower())
 
