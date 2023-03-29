@@ -20,7 +20,7 @@ with open(filename, 'w') as csvfile:
     csvwriter = csv.writer(csvfile) 
      
     NewList= [[x] for x in list_5]
-    print(NewList)
+    # print(NewList)
 
     # writing the data rows 
     csvwriter.writerows(NewList)
