@@ -11,16 +11,31 @@ with open("unigram_freq.csv") as f:
     list_5= list(i for i in list2 if len(i)==5)
     # print(list_5)
     
+
+file = open('five_letter_words.txt','w')
+# file.writelines(list_5)
+
+
+file.close()
     
-filename = "five_letter_worrrds.csv"
+    
+filename = "five_letter_worrrds2.csv"
     
 # writing to csv file 
-with open(filename, 'w') as csvfile: 
-    # creating a csv writer object 
-    csvwriter = csv.writer(csvfile) 
+# with open(filename, 'w') as csvfile: 
+#     # creating a csv writer object 
+#     csvwriter = csv.writer(csvfile) 
      
-    NewList= [[x] for x in list_5]
-    # print(NewList)
+#     NewList= [[x] for x in list_5]
+#     # print(NewList)
 
-    # writing the data rows 
-    csvwriter.writerows(NewList)
+#     # writing the data rows 
+#     # csvwriter.writerows(NewList)
+#     # csvwriter.writerows(list_5)
+#     csvfile.close()
+    
+# with open("five_letter_worrrds.csv", 'r') as f:
+#     reader = csv.reader(f)
+#     your_list = list(reader)
+#     # print(list(i for i in your_list if len(i)==5))
+#     print(list(i for i in your_list if len(your_list[0][0])==5))
