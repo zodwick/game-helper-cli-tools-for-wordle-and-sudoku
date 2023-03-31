@@ -15,6 +15,9 @@ with open("unigram_freq.csv") as f:
 file = open('five_letter_words.txt','w')
 # file.writelines(list_5)
 
+for  item in list_5:
+	file.write(item+"\n")
+file.close()
 
 file.close()
     
