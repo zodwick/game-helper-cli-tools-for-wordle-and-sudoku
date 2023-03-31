@@ -4,25 +4,25 @@
 # list2 = matrix2.tolist()
 # print(list2[0])
 
-import csv
+# import csv
 
-with open("unigram_freq.csv") as f:
-    list2 = [row.split(",")[0] for row in f]
-    list_5= list(i for i in list2 if len(i)==5)
-    # print(list_5)
+# with open("unigram_freq.csv") as f:
+#     list2 = [row.split(",")[0] for row in f]
+#     list_5= list(i for i in list2 if len(i)==5)
+#     # print(list_5)
     
 
-file = open('five_letter_words.txt','w')
-# file.writelines(list_5)
+# file = open('five_letter_words.txt','w')
+# # file.writelines(list_5)
 
-for  item in list_5:
-	file.write(item+"\n")
-file.close()
+# for  item in list_5:
+# 	file.write(item+"\n")
+# file.close()
 
-file.close()
+# file.close()
     
     
-filename = "five_letter_worrrds2.csv"
+# filename = "five_letter_worrrds2.csv"
     
 # writing to csv file 
 # with open(filename, 'w') as csvfile: 
@@ -42,3 +42,10 @@ filename = "five_letter_worrrds2.csv"
 #     your_list = list(reader)
 #     # print(list(i for i in your_list if len(i)==5))
 #     print(list(i for i in your_list if len(your_list[0][0])==5))
+
+
+
+file = open('five_letter_words.txt','r')
+lines = file.readlines()
+words=list(i[0:4] for i in lines )
+print(words)
